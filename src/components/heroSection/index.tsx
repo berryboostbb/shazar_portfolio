@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
-
+import CV from "../../assets/SalarySlip-Imran Rao_February_2026.pdf";
 export default function Hersection() {
   const headings = [
     "Web Developer",
@@ -83,13 +83,15 @@ export default function Hersection() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 mt-10 lg:mx-40 mx-5">
-                <button className="bg-[#BFF747] flex gap-2 justify-center items-center font-bricolage font-medium text-[#0E0E0E] rounded-full h-12 w-50 cursor-pointer mt-5">
-                  Download CV
-                  <Icon
-                    icon="humbleicons:arrow-up"
-                    className="text-xl text-[#000000] rotate-45"
-                  />{" "}
-                </button>{" "}
+                <a href={CV} download="Shazar-Khan-CV.pdf">
+                  <button className="bg-[#BFF747] flex gap-2 justify-center items-center font-bricolage font-medium text-[#0E0E0E] rounded-full h-12 w-50 cursor-pointer mt-5">
+                    Download CV
+                    <Icon
+                      icon="humbleicons:arrow-up"
+                      className="text-xl text-black rotate-45"
+                    />
+                  </button>
+                </a>
                 <button className="bg-[#0E0E0E] flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-12 w-45 cursor-pointer mt-5">
                   <div className="h-12 bg-[#292929] min-w-12 rounded-full flex justify-center items-center">
                     {" "}

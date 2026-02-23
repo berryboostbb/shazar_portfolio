@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Hersection from "../../components/heroSection";
 import BGimage from "../../assets/Rectangle 41426.png";
 import WeAre from "../../components/WeAre";
+import Services from "../../components/services";
 function Home() {
   return (
     <div className="relative">
@@ -53,6 +54,7 @@ function Home() {
         </style>
       </div>
       <WeAre />
+      <Services />
     </div>
   );
 }

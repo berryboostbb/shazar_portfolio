@@ -1,63 +1,79 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function CustomCursor() {
   const outerSize = 30;
   const innerSize = 8;
   const maxDistance = (outerSize - innerSize) / 2;
 
-  const [cursor, setCursor] = useState({ x: 0, y: 0 });
-  const [border, setBorder] = useState({ x: 0, y: 0 });
-  const [dot, setDot] = useState({ x: 0, y: 0 });
+  const outerRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
+
+  const mouse = useRef({ x: 0, y: 0 });
+  const border = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e: any) => {
-      setCursor({ x: e.clientX, y: e.clientY });
+    const handleMouseMove = (e: MouseEvent) => {
+      mouse.current = { x: e.clientX, y: e.clientY };
     };
+
     window.addEventListener("mousemove", handleMouseMove);
 
+    let animationFrameId: number;
+
     const animate = () => {
-      setBorder((prev) => ({
-        x: prev.x + (cursor.x - prev.x) * 0.15,
-        y: prev.y + (cursor.y - prev.y) * 0.15,
-      }));
-      const dx = cursor.x - border.x;
-      const dy = cursor.y - border.y;
+      border.current.x += (mouse.current.x - border.current.x) * 0.15;
+      border.current.y += (mouse.current.y - border.current.y) * 0.15;
+
+      const dx = mouse.current.x - border.current.x;
+      const dy = mouse.current.y - border.current.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      let newX = cursor.x;
-      let newY = cursor.y;
+      let dotX = mouse.current.x;
+      let dotY = mouse.current.y;
+
       if (distance > maxDistance) {
         const angle = Math.atan2(dy, dx);
-        newX = border.x + Math.cos(angle) * maxDistance;
-        newY = border.y + Math.sin(angle) * maxDistance;
+        dotX = border.current.x + Math.cos(angle) * maxDistance;
+        dotY = border.current.y + Math.sin(angle) * maxDistance;
       }
 
-      setDot({ x: newX, y: newY });
+      if (outerRef.current) {
+        outerRef.current.style.transform = `translate(${border.current.x - outerSize / 2}px, ${border.current.y - outerSize / 2}px)`;
+      }
 
-      requestAnimationFrame(animate);
+      if (innerRef.current) {
+        innerRef.current.style.transform = `translate(${dotX - innerSize / 2}px, ${dotY - innerSize / 2}px)`;
+      }
+
+      animationFrameId = requestAnimationFrame(animate);
     };
 
     animate();
 
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [cursor, border]);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
 
   return (
     <>
       <div
-        className="fixed pointer-events-none h-2 w-2 bg-[#BFF747] rounded-full z-50"
+        ref={innerRef}
+        className="fixed pointer-events-none z-50 bg-[#BFF747] rounded-full"
         style={{
-          left: dot.x - innerSize / 2,
-          top: dot.y - innerSize / 2,
+          width: innerSize,
+          height: innerSize,
         }}
-      ></div>
+      />
       <div
-        className="fixed pointer-events-none h-8 w-8 rounded-full border border-white z-40"
+        ref={outerRef}
+        className="fixed pointer-events-none z-40 border border-white rounded-full"
         style={{
-          left: border.x - outerSize / 2,
-          top: border.y - outerSize / 2,
+          width: outerSize,
+          height: outerSize,
         }}
-      ></div>
+      />
     </>
   );
 }

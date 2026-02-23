@@ -4,7 +4,7 @@ export default function WeAre() {
   return (
     <div className="bg-[#0E0E0E]">
       <div className="py-27 xl:px-16 md:px-10 px-5">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-wrap gap-5 lg:gap-0 justify-between items-center">
           <div>
             <div className="flex gap-3 items-center ">
               <Icon
@@ -15,7 +15,7 @@ export default function WeAre() {
                 We Are We
               </p>
             </div>
-            <p className="font-bigshoulders text-[56px] mt-6 leading-[110%] font-semibold text-white">
+            <p className="font-bigshoulders text-[40px] md:text-[56px] mt-6 leading-[110%] font-semibold text-white">
               Solving Problems With <br /> Lntuitive{" "}
               <span className="text-[#BFF747]">Design</span>
             </p>
@@ -36,17 +36,17 @@ export default function WeAre() {
           </div>
         </div>
         <div className="mt-18  flex-wrap flex gap-7 ">
-          <div className="bg-[#292929] font-bigshoulders w-full md:w-[calc(33.33%-18.66px)] p-10 text-white">
+          <div className="bg-[#292929] font-bigshoulders h-80 w-full md:w-[calc(33.33%-18.66px)] p-10 text-white">
             <p className="text-[84px] font-bold">10+</p>
             <p className="text-[32px] font-bold">Years Of My</p>
             <p className="ml-10 text-[32px] font-bold">Experience...</p>
           </div>{" "}
-          <div className="bg-[#292929] mt-10 font-bigshoulders w-full md:w-[calc(33.33%-18.66px)] p-10 text-white">
+          <div className="bg-[#292929] lg:mt-20 mt-0 font-bigshoulders h-80 w-full md:w-[calc(33.33%-18.66px)] p-10 text-white">
             <p className="text-[84px] font-bold">1400k</p>
             <p className="text-[32px] font-bold">Clients Satisfied</p>
             <p className="ml-10 text-[32px] font-bold"> Worldwide...</p>
           </div>{" "}
-          <div className="bg-[#292929] font-bigshoulders w-full md:w-[calc(33.33%-18.66px)] p-10 text-white">
+          <div className="bg-[#292929] font-bigshoulders w-full h-80 md:w-[calc(33.33%-18.66px)] p-10 text-white">
             <p className="text-[84px] font-bold">500k</p>
             <p className="text-[32px] font-bold">Successfully</p>
             <p className="ml-10 text-[32px] font-bold">Project Done...</p>
