@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+.font-bigshoulders {
+  font-family: "Big Shoulders", sans-serif;
+}
+
+.font-bricolage {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.primary {
+  color: "#BFF747";
+}
+.text-outline {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-family: "Big Shoulders", sans-serif;
+}
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
