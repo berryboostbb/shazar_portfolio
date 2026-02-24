@@ -69,27 +69,33 @@ export default function Experience() {
             className="relative py-6 border-b cursor-pointer border-[#C1C1C1]/16 group"
           >
             <div className="flex flex-col gap-2 text-white md:flex-row md:items-center md:justify-between">
-              <p className="text-[18px] md:text-[24px] font-bold font-bricolage">
+              <p className="text-base font-bold font-bigshoulders">
                 {exp.year}
               </p>
 
-              <p className="text-[22px] md:text-[36px] font-bold font-bigshoulders transition-colors duration-300 group-hover:text-[#BFF747]">
+              <p className="text-[24px] font-bold font-bigshoulders transition-colors duration-300 group-hover:text-[#BFF747]">
                 {exp.role}
               </p>
 
-              <p className="text-[18px] md:text-[24px] font-bold font-bigshoulders">
+              <p className="text-[18px] font-bold font-bigshoulders">
                 {exp.company}
               </p>
             </div>
-            <span className="absolute left-0 bottom-0 h-0.5 w-full bg-[#BFF747] scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></span>
+            <span
+              className="absolute left-0 bottom-0 h-0.5 w-full bg-[#BFF747] 
+scale-x-0 opacity-0 
+origin-center 
+transition-all duration-700 ease-out 
+group-hover:scale-x-100 group-hover:opacity-100"
+            ></span>{" "}
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 gap-6 mt-20 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7">
+      <div className="grid grid-cols-1 mt-20 gap-y-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-[#060606] p-6 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:bg-[#111111] hover:-translate-y-2"
+            className="bg-[#060606] p-4 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:bg-[#111111]"
           >
             <img
               src={skill.image}
@@ -97,7 +103,7 @@ export default function Experience() {
               className="object-contain w-20 h-20 bg-white rounded-xl"
             />
 
-            <div className="flex items-center gap-3 mt-4">
+            <div className="flex items-center gap-4 mt-4">
               <p className="text-[28px] md:text-[32px] font-bold font-bigshoulders text-[#BFF747]">
                 {skill.percent}
               </p>

@@ -75,7 +75,7 @@ export default function Project() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full transition-all duration-500 group-hover:scale-105"
+                  className="w-full transition-all duration-500 h-125 group-hover:scale-105"
                 />
               </div>
               <div className="flex items-center justify-between mt-8 text-white lg:px-6">

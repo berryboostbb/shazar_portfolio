@@ -27,7 +27,7 @@ export default function WeAre() {
               aenean. Ipsum sit proin dolor nam odio dignissim vel integer.
             </p>
 
-            <button className="relative mt-6 overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+            <button className="relative cursor-pointer mt-6 overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
               <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
               <span className="relative z-10 flex items-center gap-3">
                 <span className="text-black transition-colors duration-500 group-hover:text-black">

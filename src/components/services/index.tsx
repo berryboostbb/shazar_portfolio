@@ -44,14 +44,14 @@ export default function Services() {
       </p>
       <div className="mt-10 space-y-6">
         {services.map((service) => (
-          <div className="group border border-transparent hover:border-[#BFF747] bg-[#0E0E0E] rounded-3xl flex flex-wrap items-center gap-5 md:p-10 p-5 text-white font-bigshoulders lg:flex-nowrap xl:gap-40 transition-all duration-300 overflow-hidden relative">
+          <div className="group border  border-transparent hover:border-[#BFF747] bg-[#0E0E0E] rounded-3xl flex flex-wrap items-center gap-5 md:p-10 p-5 text-white font-bigshoulders lg:flex-nowrap xl:gap-40 transition-all duration-300 overflow-hidden relative">
             <p className="text-[24px] font-semibold">{service.id}</p>
             <p className="text-[24px] w-[20%] font-semibold">{service.title}</p>
             <p className="w-[45%] text-base font-normal font-bricolage">
               {service.description}
             </p>
-            <div className="relative flex items-center justify-start w-full overflow-hidden md:w-auto xl:justify-start">
-              <div className="flex items-center gap-6 transition-transform duration-500 transform translate-x-20 group-hover:translate-x-0">
+            <div className="relative flex items-center md:w-[30%] justify-start w-full overflow-hidden xl:justify-start">
+              <div className="flex items-center gap-3 transition-transform duration-500 transform translate-x-30 md:translate-x-0 lg:translate-x-25 xl:translate-x-30 2xl:translate-x-69 group-hover:translate-x-0 xl:group-hover:translate-x-0 2xl:group-hover:translate-x-30">
                 <div
                   className="min-w-10 h-10 border border-green-400 text-[#BFF747] flex justify-center items-center rounded-full 
                  transition-all duration-300 group-hover:bg-[#BFF747] group-hover:border-green-400"
