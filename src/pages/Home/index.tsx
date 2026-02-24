@@ -1,10 +1,13 @@
 import { Icon } from "@iconify/react";
-import CustomCursor from "../../components/CustomCursor";
+import CustomCursor from "../../components/customCursor";
 import Header from "../../components/Header";
 import Hersection from "../../components/heroSection";
 import BGimage from "../../assets/Rectangle 41426.png";
-import WeAre from "../../components/WeAre";
+import WeAre from "../../components/weAre";
 import Services from "../../components/services";
+import Project from "../../components/projects";
+import Experience from "../../components/experience";
+import Testimonial from "../../components/testimonial";
 function Home() {
   return (
     <div className="relative">
@@ -13,19 +16,19 @@ function Home() {
         style={{
           backgroundImage: `url(${BGimage})`,
         }}
-        className="bg-cover bg-no-repeat h-screen"
+        className="h-screen bg-no-repeat bg-cover"
       >
         <Header />
         <Hersection />
       </div>
       <div className="bg-[#292929] overflow-hidden py-4 relative">
-        <div className="scroll-track gap-6" style={{ display: "flex" }}>
+        <div className="gap-6 scroll-track" style={{ display: "flex" }}>
           {Array(20)
             .fill(0)
             .map((_, i) => (
               <div
                 key={i}
-                className="flex items-center gap-3 w-auto"
+                className="flex items-center w-auto gap-3"
                 style={{
                   whiteSpace: "nowrap",
                 }}
@@ -34,7 +37,7 @@ function Home() {
                   icon="mdi:star-four-points"
                   style={{ fontSize: "24px", color: "#BFF747" }}
                 />
-                <p className="font-bigShoulders uppercase text-2xl text-white">
+                <p className="text-2xl text-white uppercase font-bigShoulders">
                   The Best Solution
                 </p>
               </div>
@@ -55,6 +58,9 @@ function Home() {
       </div>
       <WeAre />
       <Services />
+      <Project />
+      <Experience />
+      <Testimonial />
     </div>
   );
 }
