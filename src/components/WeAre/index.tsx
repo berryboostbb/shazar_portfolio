@@ -11,7 +11,7 @@ export default function WeAre() {
                 icon="mdi:star-four-points"
                 className="text-2xl text-[#BFF747]"
               />
-              <p className="text-2xl font-semibold text-white font-bricolage ">
+              <p className="text-[18px] font-semibold text-white font-bricolage ">
                 We Are We
               </p>
             </div>

@@ -1,32 +1,34 @@
 import { Icon } from "@iconify/react";
-import Project1 from "../../assets/Project/Rectangle4142.png";
-import Project2 from "../../assets/Project/Rectangle41427.png";
-
+import Grazle from "../../assets/Project/Rectangle41427.png";
+import MediTour from "../../assets/Project/Meditour.png";
+import Procuremnet from "../../assets/Project/Procurement.png";
+import Alhai from "../../assets/Project/Alhai.png";
 export default function Project() {
   const projects = [
     {
       id: 1,
       category: "Web / Development",
-      title: "BerryBoost",
-      image: Project1,
+      title: "MediTour",
+      image: MediTour,
     },
     {
       id: 2,
       category: "Web / Development",
-      title: "BerryBoost",
-      image: Project2,
+      title: "Grazle",
+      image: Grazle,
     },
+
     {
       id: 3,
       category: "Web / Development",
-      title: "BerryBoost",
-      image: Project1,
+      title: "Procuremnet",
+      image: Procuremnet,
     },
     {
       id: 4,
       category: "Web / Development",
-      title: "BerryBoost",
-      image: Project2,
+      title: "Alhai ",
+      image: Alhai,
     },
   ];
 
@@ -40,7 +42,7 @@ export default function Project() {
                 icon="mdi:star-four-points"
                 className="text-2xl text-[#BFF747]"
               />
-              <p className="text-2xl font-semibold text-white font-bricolage">
+              <p className="text-[18px] font-semibold text-white font-bricolage">
                 Projects
               </p>
             </div>
@@ -50,7 +52,7 @@ export default function Project() {
             </p>
           </div>
 
-          <button className="relative overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+          <button className="relative cursor-pointer overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
             <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
             <span className="relative z-10 flex items-center gap-3">
               <span className="text-black transition-colors duration-500 group-hover:text-black">

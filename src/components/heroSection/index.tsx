@@ -84,7 +84,7 @@ export default function Hersection() {
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4 mx-5 mt-10 lg:mx-40">
                 <a href={CV} download="Shazar-Khan-CV.pdf" className="mt-4">
-                  <button className="relative overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+                  <button className="relative cursor-pointer overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
                     <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
                     <span className="relative z-10 flex items-center gap-3">
                       <span className="text-black transition-colors duration-500 group-hover:text-black">
@@ -97,7 +97,7 @@ export default function Hersection() {
                     </span>
                   </button>
                 </a>
-                <button className="bg-[#0E0E0E] flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 cursor-pointer mt-5">
+                <button className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 cursor-pointer mt-5">
                   <div className="h-14 bg-[#292929] min-w-14 rounded-full flex justify-center items-center">
                     {" "}
                     <Icon

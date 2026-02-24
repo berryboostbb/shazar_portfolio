@@ -54,7 +54,7 @@ export default function Experience() {
     <div className="bg-[#171914] px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10">
       <div className="flex items-center gap-3">
         <Icon icon="mdi:star-four-points" className="text-2xl text-[#BFF747]" />
-        <p className="text-2xl font-semibold text-white font-bricolage">
+        <p className="text-[18px] font-semibold text-white font-bricolage">
           My Experience
         </p>
       </div>
