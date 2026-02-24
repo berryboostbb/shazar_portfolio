@@ -8,8 +8,7 @@ export default function Header() {
 
   return (
     <header className="py-6 bg-transparent ">
-      {" "}
-      <div className="flex items-center justify-between mx-5 xl:mx-16 md:mx-10">
+      <div className="flex items-center justify-between xl:px-32 2xl:px-40 md:px-10">
         <img src={Logo} alt="Shazar Khan Logo" className="w-auto h-12" />
 
         <nav className="hidden gap-6 font-medium text-white md:flex font-bricolage">
@@ -23,8 +22,17 @@ export default function Header() {
           ))}
         </nav>
 
-        <button className="hidden md:block h-11.25 w-30 font-bricolage text-[#BFF747] border border-[#BFF747] rounded-lg font-semibold text-[24px] ">
-          Hire Me
+        <button className="relative overflow-hidden hidden group md:flex gap-3 justify-center items-center h-11.25 w-40 font-bricolage border border-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+          <span className="absolute inset-0 bg-[#BFF747] rounded-full -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+          <span className="relative z-10 flex items-center gap-3">
+            <span className="transition-colors duration-500 group-hover:text-black">
+              Hire Me
+            </span>
+            <Icon
+              icon="humbleicons:arrow-up"
+              className="text-xl text-white transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
+            />
+          </span>
         </button>
         <div className="flex items-center md:hidden">
           <button
@@ -40,13 +48,13 @@ export default function Header() {
           {navLinks.map((link) => (
             <p
               key={link}
-              className="cursor-pointer hover:text-[#BFF747] transition-colors duration-200"
+              className="cursor-pointer hover:text-[#BFF747] text-[18px] transition-colors duration-200"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link}
             </p>
           ))}
-          <button className="mt-4 px-6 py-2.5 text-[#BFF747] border  text-[24px] border-[#BFF747] rounded-lg font-semibold ">
+          <button className="mt-4 px-6 py-2.5 text-[#BFF747] border  text-[24px] border-[#BFF747] rounded-full font-semibold ">
             Hire Me
           </button>
         </nav>

@@ -29,10 +29,10 @@ export default function Services() {
   ];
 
   return (
-    <div className="bg-[#171914] px-5 py-10 md:py-25 xl:px-16 md:px-10">
+    <div className="bg-[#171914] px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10">
       <div className="flex items-center justify-center gap-3">
         <Icon icon="mdi:star-four-points" className="text-2xl text-[#BFF747]" />
-        <p className="text-2xl font-semibold text-white font-bigshoulders">
+        <p className="text-2xl font-semibold text-white font-bricolage">
           Our Services
         </p>
       </div>
@@ -43,28 +43,24 @@ export default function Services() {
       </p>
       <div className="mt-10 space-y-6">
         {services.map((service) => (
-          <div className="group border border-transparent hover:border-[#BFF747] bg-[#0E0E0E] rounded-3xl flex flex-wrap items-center gap-5 md:p-10 p-5 text-white font-bigshoulders lg:flex-nowrap xl:gap-40 transition-all duration-300">
-            <div className="flex items-start gap-5 lg:items-center">
-              <p className="text-[24px] font-semibold">{service.id}</p>
-              <p className="text-[24px] font-semibold w-full md:w-60">
-                {service.title}
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center gap-5 lg:flex-nowrap lg:gap-20">
-              <p className="w-full text-base font-normal font-bricolage">
-                {service.description}
-              </p>
-              <div className="relative flex items-center justify-start w-full gap-6 md:w-auto md:justify-center xl:justify-start">
+          <div className="group border border-transparent hover:border-[#BFF747] bg-[#0E0E0E] rounded-3xl flex flex-wrap items-center gap-5 md:p-10 p-5 text-white font-bigshoulders lg:flex-nowrap xl:gap-40 transition-all duration-300 overflow-hidden relative">
+            <p className="text-[24px] font-semibold">{service.id}</p>
+            <p className="text-[24px] w-[20%] font-semibold">{service.title}</p>
+            <p className="w-[45%] text-base font-normal font-bricolage">
+              {service.description}
+            </p>
+            <div className="relative flex items-center justify-start w-full overflow-hidden md:w-auto xl:justify-start">
+              <div className="flex items-center gap-6 transition-transform duration-500 transform translate-x-20 group-hover:translate-x-0">
                 <div
-                  className="min-w-10 h-10 border border-[#BFF747] text-[#BFF747] flex justify-center items-center rounded-full 
-                     transition-all duration-300 group-hover:bg-[#BFF747] group-hover:border-[#BFF747]"
+                  className="min-w-10 h-10 border border-green-400 text-[#BFF747] flex justify-center items-center rounded-full 
+                 transition-all duration-300 group-hover:bg-[#BFF747] group-hover:border-green-400"
                 >
                   <Icon
                     icon="humbleicons:arrow-up"
                     className="text-xl transition-all duration-300 rotate-45 group-hover:text-[#0E0E0E]"
                   />
                 </div>
-                <span className="text-sm font-normal text-white transition-all duration-300 scale-75 opacity-100 w-25 lg:opacity-0 font-bricolage group-hover:opacity-100 group-hover:scale-100">
+                <span className="text-sm font-normal text-white w-21 font-bricolage">
                   Read More
                 </span>
               </div>

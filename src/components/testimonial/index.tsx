@@ -3,15 +3,15 @@ import dummay from "../../assets/fccb7709e983a930e1ecc0df74f910ff8d2e3256.jpg";
 
 export default function Testimonial() {
   return (
-    <div className="bg-[#060606] px-5 py-10 md:py-25 xl:px-16 md:px-10 h-256 flex flex-wrap gap-10 lg:gap-0  justify-between items-center">
+    <div className="bg-[#060606] px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10 h-256 flex flex-wrap gap-10 lg:gap-0  justify-between items-center">
       <div className="md:w-[40%] w-full">
         <div className="flex items-center gap-3">
           <Icon
             icon="mdi:star-four-points"
             className="text-2xl text-[#BFF747]"
           />
-          <p className="text-2xl font-semibold text-white font-bigshoulders">
-            Projects
+          <p className="text-2xl font-semibold text-white font-bricolage">
+            Testimonial
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-      <div className="bg-[#171914] rounded-2xl lg:w-1/2 w-full p-10 text-white">
+      <div className="bg-[#171914] border border-[#BFF747] rounded-2xl lg:w-1/2 w-full p-10 text-white">
         <div className="flex flex-wrap items-center gap-6">
           <div className="h-20 bg-white rounded-full min-w-20">
             <img src={dummay} className="w-full h-full rounded-full" />

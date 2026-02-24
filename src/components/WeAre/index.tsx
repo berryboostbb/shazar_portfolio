@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 export default function WeAre() {
   return (
     <div className="bg-[#0E0E0E]">
-      <div className="px-5 py-10 md:py-25 xl:px-16 md:px-10">
+      <div className="px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10">
         <div className="flex flex-wrap items-center justify-between gap-5 lg:gap-0">
           <div>
             <div className="flex items-center gap-3 ">
@@ -11,7 +11,7 @@ export default function WeAre() {
                 icon="mdi:star-four-points"
                 className="text-2xl text-[#BFF747]"
               />
-              <p className="text-2xl font-semibold text-white font-bigshoulders ">
+              <p className="text-2xl font-semibold text-white font-bricolage ">
                 We Are We
               </p>
             </div>
@@ -26,12 +26,18 @@ export default function WeAre() {
               commodo aenean in. Tristique at lectus aliquam quis aliquam
               aenean. Ipsum sit proin dolor nam odio dignissim vel integer.
             </p>
-            <button className="bg-[#BFF747] flex gap-2 justify-center items-center font-bricolage font-medium text-[#0E0E0E] rounded-full h-12 w-50 cursor-pointer mt-12">
-              More About Me
-              <Icon
-                icon="humbleicons:arrow-up"
-                className="text-xl text-[#000000] rotate-45"
-              />{" "}
+
+            <button className="relative mt-6 overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+              <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
+              <span className="relative z-10 flex items-center gap-3">
+                <span className="text-black transition-colors duration-500 group-hover:text-black">
+                  More About Me
+                </span>
+                <Icon
+                  icon="humbleicons:arrow-up"
+                  className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
+                />
+              </span>
             </button>
           </div>
         </div>

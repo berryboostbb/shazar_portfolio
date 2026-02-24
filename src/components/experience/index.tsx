@@ -51,10 +51,10 @@ export default function Experience() {
     { name: "Git", percent: "98%", image: Git },
   ];
   return (
-    <div className="bg-[#171914] px-5 py-10 md:py-24 xl:px-16 md:px-10">
+    <div className="bg-[#171914] px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10">
       <div className="flex items-center gap-3">
         <Icon icon="mdi:star-four-points" className="text-2xl text-[#BFF747]" />
-        <p className="text-2xl font-semibold text-white font-bigshoulders">
+        <p className="text-2xl font-semibold text-white font-bricolage">
           My Experience
         </p>
       </div>
@@ -62,9 +62,12 @@ export default function Experience() {
       <p className="font-bigshoulders text-[40px] md:text-[56px] mt-6 leading-[110%] font-semibold text-white">
         My Work <span className="text-[#BFF747]">Experience</span>
       </p>
-      <div className="mt-16 space-y-12">
+      <div className="mt-16">
         {experiences.map((exp, index) => (
-          <div key={index} className="relative pb-6 cursor-pointer group">
+          <div
+            key={index}
+            className="relative py-6 border-b cursor-pointer border-[#C1C1C1]/16 group"
+          >
             <div className="flex flex-col gap-2 text-white md:flex-row md:items-center md:justify-between">
               <p className="text-[18px] md:text-[24px] font-bold font-bricolage">
                 {exp.year}

@@ -59,7 +59,7 @@ export default function Hersection() {
                 icon="mdi:star-four-points"
                 className="text-2xl text-[#BFF747]"
               />
-              <p className="text-2xl font-bricolage ">Hey There</p>
+              <p className="text-[18px] font-bricolage ">Hey There</p>
             </div>
             <div className="relative w-full mx-auto lg:w-265">
               <p className=" lg:text-[130px]  md:text-[100px] text-[40px] text-center leading-[100%] font-bigshoulders font-bold">
@@ -82,18 +82,23 @@ export default function Hersection() {
                   integer.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4 mx-5 mt-10 lg:mx-40">
-                <a href={CV} download="Shazar-Khan-CV.pdf">
-                  <button className="bg-[#BFF747] flex gap-2 justify-center items-center font-bricolage font-medium text-[#0E0E0E] rounded-full h-12 w-50 cursor-pointer mt-5">
-                    Download CV
-                    <Icon
-                      icon="humbleicons:arrow-up"
-                      className="text-xl text-black rotate-45"
-                    />
+              <div className="flex flex-wrap items-center justify-center gap-4 mx-5 mt-10 lg:mx-40">
+                <a href={CV} download="Shazar-Khan-CV.pdf" className="mt-4">
+                  <button className="relative overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+                    <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
+                    <span className="relative z-10 flex items-center gap-3">
+                      <span className="text-black transition-colors duration-500 group-hover:text-black">
+                        Download CV
+                      </span>
+                      <Icon
+                        icon="humbleicons:arrow-up"
+                        className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
+                      />
+                    </span>
                   </button>
                 </a>
-                <button className="bg-[#0E0E0E] flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-12 w-45 cursor-pointer mt-5">
-                  <div className="h-12 bg-[#292929] min-w-12 rounded-full flex justify-center items-center">
+                <button className="bg-[#0E0E0E] flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 cursor-pointer mt-5">
+                  <div className="h-14 bg-[#292929] min-w-14 rounded-full flex justify-center items-center">
                     {" "}
                     <Icon
                       icon="iconoir:play-solid"
@@ -103,7 +108,7 @@ export default function Hersection() {
                   View Reel
                 </button>
               </div>
-              <div className="absolute flex gap-5 text-white font-bricolage rotate-270 -left-100 top-48">
+              <div className="absolute flex gap-5 text-white font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-6 top-100 md:top-120 lg:top-48">
                 <p className="text-sm">Facebook</p>
                 <p className="text-sm">Twitter</p>
                 <p className="text-sm">Linkedin</p>
