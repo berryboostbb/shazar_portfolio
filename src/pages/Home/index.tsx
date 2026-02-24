@@ -6,8 +6,8 @@ import Services from "../../components/services";
 import Project from "../../components/projects";
 import Experience from "../../components/experience";
 import Testimonial from "../../components/testimonial";
-import CustomCursor from "../../components/customCursor";
-import WeAre from "../../components/weAre";
+import CustomCursor from "../../components/CustomCursor";
+import WeAre from "../../components/WeAre";
 
 function Home() {
   return (
