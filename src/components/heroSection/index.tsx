@@ -54,14 +54,14 @@ export default function Hersection() {
       <div className="bg-transparent h-[calc(100vh-96px)] w-full">
         <div className="xl:px-16 md:px-10 px-5 flex justify-center items-center w-full h-[calc(100vh-120px)]">
           <div className="text-white">
-            <div className="flex justify-center items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <Icon
                 icon="mdi:star-four-points"
                 className="text-2xl text-[#BFF747]"
               />
-              <p className="font-bricolage text-2xl ">Hey There</p>
+              <p className="text-2xl font-bricolage ">Hey There</p>
             </div>
-            <div className="lg:w-265 w-full relative mx-auto">
+            <div className="relative w-full mx-auto lg:w-265">
               <p className=" lg:text-[130px]  md:text-[100px] text-[40px] text-center leading-[100%] font-bigshoulders font-bold">
                 I’m Shazar{" "}
                 <span className="lg:text-[100px]  md:text-[80px] text-[40px] text-outline">
@@ -74,7 +74,7 @@ export default function Hersection() {
                 <span className="animate-blink"></span>
               </p>
 
-              <div className="lg:mx-40 mx-5 mt-5">
+              <div className="mx-5 mt-5 lg:mx-40">
                 <p className="text-start md:text-[18px] text-base w-full font-bricolage mt-3">
                   Mauris risus augue pulvinar augue sed et. Risus volutpat
                   posuere commodo aenean in. Tristique at lectus aliquam quis
@@ -82,7 +82,7 @@ export default function Hersection() {
                   integer.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4 mt-10 lg:mx-40 mx-5">
+              <div className="flex flex-wrap gap-4 mx-5 mt-10 lg:mx-40">
                 <a href={CV} download="Shazar-Khan-CV.pdf">
                   <button className="bg-[#BFF747] flex gap-2 justify-center items-center font-bricolage font-medium text-[#0E0E0E] rounded-full h-12 w-50 cursor-pointer mt-5">
                     Download CV
@@ -103,7 +103,7 @@ export default function Hersection() {
                   View Reel
                 </button>
               </div>
-              <div className="flex gap-5 font-bricolage rotate-270 absolute -left-100 top-48 text-white">
+              <div className="absolute flex gap-5 text-white font-bricolage rotate-270 -left-100 top-48">
                 <p className="text-sm">Facebook</p>
                 <p className="text-sm">Twitter</p>
                 <p className="text-sm">Linkedin</p>
@@ -112,7 +112,6 @@ export default function Hersection() {
           </div>
         </div>
       </div>
-      {/* Tailwind cursor animation */}
       <style>{`
         @keyframes blink {
           0%, 50%, 100% { opacity: 1; }
