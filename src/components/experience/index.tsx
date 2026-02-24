@@ -3,7 +3,7 @@ import ReactLogo from "../../assets/react.png";
 import Node from "../../assets/node.png";
 import Mongo from "../../assets/mongo.png";
 import JS from "../../assets/js.png";
-import Next from "../../assets/nextjs.png";
+import Next from "../../assets/next.jpg";
 import Redux from "../../assets/redux.png";
 import Firebase from "../../assets/firbase.png";
 import TS from "../../assets/ts.png";
