@@ -68,7 +68,7 @@ export default function CustomCursor() {
       />
       <div
         ref={outerRef}
-        className="fixed pointer-events-none z-40 border border-white rounded-full"
+        className="fixed z-40 border border-white rounded-full pointer-events-none"
         style={{
           width: outerSize,
           height: outerSize,

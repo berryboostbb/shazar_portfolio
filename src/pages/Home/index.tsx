@@ -1,13 +1,14 @@
 import { Icon } from "@iconify/react";
-import CustomCursor from "../../components/customCursor";
 import Header from "../../components/Header";
 import Hersection from "../../components/heroSection";
 import BGimage from "../../assets/Rectangle 41426.png";
-import WeAre from "../../components/weAre";
 import Services from "../../components/services";
 import Project from "../../components/projects";
 import Experience from "../../components/experience";
 import Testimonial from "../../components/testimonial";
+import CustomCursor from "../../components/customCursor";
+import WeAre from "../../components/weAre";
+
 function Home() {
   return (
     <div className="relative">
