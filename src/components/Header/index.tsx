@@ -7,12 +7,12 @@ export default function Header() {
   const navLinks = ["Home", "About", "Services", "Portfolio", "Contact"];
 
   return (
-    <header className="bg-transparent py-6 ">
+    <header className="py-6 bg-transparent ">
       {" "}
-      <div className="xl:mx-16 md:mx-10 mx-5 flex justify-between items-center">
-        <img src={Logo} alt="Shazar Khan Logo" className="h-12 w-auto" />
+      <div className="flex items-center justify-between mx-5 xl:mx-16 md:mx-10">
+        <img src={Logo} alt="Shazar Khan Logo" className="w-auto h-12" />
 
-        <nav className="hidden md:flex font-bricolage gap-6 text-white font-medium">
+        <nav className="hidden gap-6 font-medium text-white md:flex font-bricolage">
           {navLinks.map((link) => (
             <p
               key={link}
@@ -26,17 +26,17 @@ export default function Header() {
         <button className="hidden md:block h-11.25 w-30 font-bricolage text-[#BFF747] border border-[#BFF747] rounded-lg font-semibold text-[24px] ">
           Hire Me
         </button>
-        <div className="md:hidden flex items-center">
+        <div className="flex items-center md:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-white text-3xl focus:outline-none"
+            className="text-3xl text-white focus:outline-none"
           >
             <Icon icon={mobileMenuOpen ? "mdi:close" : "mdi:menu"} width="32" />
           </button>
         </div>
       </div>
       {mobileMenuOpen && (
-        <nav className="md:hidden bg-black mt-5 px-5 pb-6 flex flex-col gap-4 text-white font-medium animate-slideDown">
+        <nav className="flex flex-col gap-4 px-5 py-6 mt-5 font-medium text-white bg-black md:hidden animate-slideDown">
           {navLinks.map((link) => (
             <p
               key={link}
