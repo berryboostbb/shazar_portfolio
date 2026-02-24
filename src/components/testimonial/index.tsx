@@ -90,7 +90,6 @@ export default function Testimonial() {
           let zIndex = 0;
           let border = "none";
 
-          // 🔥 MAIN CENTER CARD
           if (position === 0) {
             scale = 1;
             translateY = -20;
@@ -98,40 +97,32 @@ export default function Testimonial() {
             opacity = 1;
             zIndex = 50;
             border = "1px solid #BFF747";
-          }
-          // 🔥 LEFT CARD
-          else if (position === 1) {
+          } else if (position === 1) {
             scale = 0.9;
             translateX = -70;
             translateY = -30;
             rotate = -3;
             opacity = 0.9;
             zIndex = 40;
-          }
-          // 🔥 RIGHT CARD
-          else if (position === 2) {
+          } else if (position === 2) {
             scale = 0.9;
             translateX = 70;
             translateY = -30;
             rotate = 3;
             opacity = 0.9;
             zIndex = 40;
-          }
-          // 🔥 BACK LEFT
-          else if (position === 3) {
+          } else if (position === 3) {
             scale = 0.8;
             translateX = -140;
             translateY = -30;
             rotate = -6;
             opacity = 0.6;
             zIndex = 30;
-          }
-          // 🔥 BACK RIGHT
-          else if (position === 4) {
+          } else if (position === 4) {
             scale = 0.8;
             translateX = 140;
             translateY = -30;
-            rotate = 3;
+            rotate = 6;
             opacity = 0.6;
             zIndex = 30;
           }
