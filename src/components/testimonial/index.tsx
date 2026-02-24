@@ -12,13 +12,15 @@ const testimonials = [
   {
     name: "John Carter",
     role: "Product Head",
-    image: dummay,
+    image:
+      "https://as2.ftcdn.net/jpg/02/44/43/91/1000_F_244439183_Wn6zbxmjuJTCaRodCGH9MFDUL1r3yCuK.jpg",
     text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
   },
   {
     name: "Sophia Turner",
     role: "Marketing Head",
-    image: dummay,
+    image:
+      "https://thumbs.dreamstime.com/b/vector-design-avatar-dummy-symbol-collection-image-icon-stock-isolated-object-set-illustration-137162606.jpg",
     text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
   },
   {
@@ -30,7 +32,7 @@ const testimonials = [
   {
     name: "David Miller",
     role: "CEO Founder",
-    image: dummay,
+    image: "https://cdn-icons-png.freepik.com/512/9347/9347560.png",
     text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
   },
 ];
@@ -125,9 +127,7 @@ export default function Testimonial() {
             rotate = 6;
             opacity = 0.6;
             zIndex = 30;
-          }
-          // hide others
-          else {
+          } else {
             return null;
           }
 
