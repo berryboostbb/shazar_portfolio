@@ -11,7 +11,9 @@ import Tailwind from "../../assets/tailwind.png";
 import MUI from "../../assets/MUI.png";
 import JWT from "../../assets/jwt.png";
 import Git from "../../assets/git.png";
-
+import Socket from "../../assets/socket.png";
+import Express from "../../assets/express.webp";
+import Stripe from "../../assets/Stripe.png";
 export default function Experience() {
   const experiences = [
     {
@@ -36,19 +38,22 @@ export default function Experience() {
     },
   ];
   const skills = [
-    { name: "React", percent: "94%", image: ReactLogo },
+    { name: "React js", percent: "94%", image: ReactLogo },
     { name: "React Native", percent: "94%", image: ReactLogo },
     { name: "Next.js", percent: "90%", image: Next },
     { name: "Node.js", percent: "88%", image: Node },
+    { name: "Express.js", percent: "91%", image: Express },
     { name: "MongoDB", percent: "85%", image: Mongo },
     { name: "JavaScript", percent: "92%", image: JS },
     { name: "TypeScript", percent: "92%", image: TS },
     { name: "Redux", percent: "94%", image: Redux },
     { name: "Firebase", percent: "98%", image: Firebase },
+    { name: "Stripe", percent: "98%", image: Stripe },
+    { name: "Socket.io ", percent: "94%", image: Socket },
     { name: "Tailwind css", percent: "92%", image: Tailwind },
     { name: "Material Ui", percent: "94%", image: MUI },
     { name: "JWT", percent: "98%", image: JWT },
-    { name: "Git", percent: "98%", image: Git },
+    { name: "Git", percent: "93%", image: Git },
   ];
   return (
     <div className="bg-[#171914] px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10">
@@ -88,11 +93,11 @@ export default function Experience() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 mt-20 rounded-2xl gap-y-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7">
+      <div className="flex flex-wrap items-center justify-center mt-20 gap-y-5 rounded-2xl ">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-[#060606]  border-r border-[#C1C1C1]/40 last:border-0 p-4 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:bg-[#111111]"
+            className="bg-[#060606] w-54.5 h-54.5 border-r border-[#C1C1C1]/40 last:border-0 p-4 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:bg-[#111111]"
           >
             <img
               src={skill.image}
@@ -101,10 +106,10 @@ export default function Experience() {
             />
 
             <div className="flex items-center gap-4 mt-4">
-              <p className="text-[28px] md:text-[32px] font-bold font-bigshoulders text-[#BFF747]">
+              <p className="text-[28px] md:text-[24px] font-bold font-bigshoulders text-[#BFF747]">
                 {skill.percent}
               </p>
-              <p className="text-[18px] md:text-[22px] font-bold font-bigshoulders text-white">
+              <p className="text-[18px] md:text-[18px] font-bold font-bigshoulders text-white">
                 {skill.name}
               </p>
             </div>

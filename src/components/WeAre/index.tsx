@@ -100,7 +100,6 @@ export default function HeroSection() {
               Worldwide...
             </p>
           </motion.div>
-
           <motion.div
             variants={itemVariants}
             className="bg-[#292929] font-bigshoulders w-full h-80 md:w-[calc(33.33%-18.66px)] p-10 md:p-5 lg:p-10 text-[#C1C1C1]"

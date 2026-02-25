@@ -11,25 +11,29 @@ export default function Project() {
       category: "Web / Development",
       title: "MediTour",
       image: MediTour,
+      link: "https://meditour.global/",
     },
     {
       id: 2,
       category: "Web / Development",
       title: "Grazle",
       image: Grazle,
+      link: "https://grazle-web-57uc.vercel.app/",
     },
 
     {
       id: 3,
       category: "Web / Development",
-      title: "Procuremnet",
+      title: "Procurement League",
       image: Procuremnet,
+      link: "https://procurementleague.com/",
     },
     {
       id: 4,
       category: "Web / Development",
       title: "Alhai ",
       image: Alhai,
+      link: "https://alhai.net/",
     },
   ];
 
@@ -80,7 +84,7 @@ export default function Project() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full transition-all duration-500 h-125 group-hover:scale-105"
+                  className="object-fill w-full transition-all duration-500 h-70 md:h-60 lg:h-80 2xl:h-126 xl:h-100 group-hover:scale-105"
                 />
               </div>
 
@@ -93,13 +97,18 @@ export default function Project() {
                     {project.title}
                   </p>
                 </div>
-
-                <div className="min-w-15 h-15 border border-[#BFF747] text-white flex justify-center items-center rounded-full transition-all duration-300 group-hover:bg-[#BFF747] group-hover:text-black">
-                  <Icon
-                    icon="humbleicons:arrow-up"
-                    className="text-3xl transition-all duration-300 rotate-45 group-hover:rotate-90"
-                  />
-                </div>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="min-w-15 h-15 border border-[#BFF747] text-white flex justify-center items-center rounded-full transition-all duration-300 group-hover:bg-[#BFF747] group-hover:text-black">
+                    <Icon
+                      icon="humbleicons:arrow-up"
+                      className="text-3xl transition-all duration-300 rotate-45 group-hover:rotate-90"
+                    />
+                  </div>
+                </a>
               </div>
             </motion.div>
           ))}

@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import BGimage from "../../assets/footer bg.png";
 import Logo from "../../assets/Shazar Khan.png";
+import { HashLink } from "react-router-hash-link";
 
+const MotionHashLink = motion(HashLink);
 export default function Footer() {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -14,12 +16,34 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["ABOUT ME", "SERVICE", "PORTFOLIO", "BLOG", "CONTACT US"];
+  const navLinks = [
+    { name: "Home", hash: "#home" },
+    { name: "About", hash: "#about" },
+    { name: "Services", hash: "#services" },
+    { name: "Portfolio", hash: "#portfolio" },
+    { name: "Contact Me", hash: "#contact" },
+  ];
   const socialLinks = [
-    { name: "LinkedIn", icon: "mingcute:linkedin-fill", link: "#" },
-    { name: "Facebook", icon: "bxl:facebook", link: "#" },
-    { name: "Instagram", icon: "mdi:instagram", link: "#" },
-    { name: "Twitter", icon: "mdi:twitter", link: "#" },
+    {
+      name: "LinkedIn",
+      icon: "mingcute:linkedin-fill",
+      link: "https://www.linkedin.com/in/shazarkhan/",
+    },
+    {
+      name: "Fiverr",
+      icon: "jam:fiverr",
+      link: "https://www.fiverr.com/berryboost_bb",
+    },
+    {
+      name: "Whatapp",
+      icon: "mdi:whatsapp",
+      link: "https://wa.me/923312227735",
+    },
+    {
+      name: "Github",
+      icon: "mynaui:github-solid",
+      link: "https://github.com/shazar007",
+    },
   ];
 
   const containerVariants: Variants = {
@@ -63,13 +87,15 @@ export default function Footer() {
             className="flex flex-wrap justify-center gap-6 mt-8 md:gap-10"
           >
             {navLinks.map((item, index) => (
-              <motion.p
+              <MotionHashLink
                 key={index}
+                smooth
+                to={item.hash}
                 variants={itemVariants}
                 className="text-white uppercase font-bold text-sm md:text-base font-bricolage cursor-pointer hover:text-[#BFF747] transition duration-300"
               >
-                {item}
-              </motion.p>
+                {item.name}
+              </MotionHashLink>
             ))}
           </motion.nav>
 
@@ -97,6 +123,24 @@ export default function Footer() {
                 </p>
               </motion.a>
             ))}
+            <a
+              href={`https://mail.google.com/mail/?view=cm&to=shazarkhan19@gmail.com&su=${encodeURIComponent(
+                "Hello Shazar",
+              )}&body=${encodeURIComponent("I want to connect with you")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group"
+            >
+              <div className="flex items-center justify-center h-10 w-10 rounded-full bg-[#292929] group-hover:bg-[#BFF747] transition duration-300">
+                <Icon
+                  icon="ic:baseline-email"
+                  className="text-xl text-white transition duration-300 group-hover:text-black"
+                />
+              </div>
+              <p className="text-sm text-white group-hover:text-[#BFF747] transition duration-300">
+                Email
+              </p>
+            </a>
           </motion.div>
         </motion.div>
 

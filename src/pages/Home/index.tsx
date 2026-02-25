@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Header from "../../components/Header";
 import Hersection from "../../components/heroSection";
@@ -11,18 +12,45 @@ import WeAre from "../../components/WeAre";
 import Footer from "../../components/footer";
 
 function Home() {
+  const sectionIds = ["home", "about", "services", "portfolio", "contact"];
+
+  useEffect(() => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          history.replaceState(null, "", `#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: "-50% 0px -50% 0px", // triggers when section is near the center
+      threshold: 0,
+    });
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="relative">
       <CustomCursor />
+
       <div
-        style={{
-          backgroundImage: `url(${BGimage})`,
-        }}
+        style={{ backgroundImage: `url(${BGimage})` }}
         className="h-screen bg-no-repeat bg-cover"
       >
         <Header />
-        <Hersection />
+        <div id="home">
+          <Hersection />
+        </div>
       </div>
+
       <div className="bg-[#292929] overflow-hidden py-4 relative">
         <div className="gap-6 scroll-track" style={{ display: "flex" }}>
           {Array(20)
@@ -31,9 +59,7 @@ function Home() {
               <div
                 key={i}
                 className="flex items-center w-auto gap-3"
-                style={{
-                  whiteSpace: "nowrap",
-                }}
+                style={{ whiteSpace: "nowrap" }}
               >
                 <Icon
                   icon="mdi:star-four-points"
@@ -58,12 +84,25 @@ function Home() {
     `}
         </style>
       </div>
-      <WeAre />
-      <Services />
-      <Project />
+
+      <div id="about">
+        <WeAre />
+      </div>
+
+      <div id="services">
+        <Services />
+      </div>
+
+      <div id="portfolio">
+        <Project />
+      </div>
+
       <Experience />
       <Testimonial />
-      <Footer />
+
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 }
