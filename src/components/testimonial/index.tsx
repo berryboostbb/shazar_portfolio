@@ -80,7 +80,7 @@ export default function Testimonial() {
             </div>
           </div>
         </div>
-        <div className="relative  xl:w-1/2 w-full h-112.5 flex items-center justify-center">
+        <div className="relative xl:w-1/2 w-full h-96 md:h-112.5 flex items-center justify-center overflow-visible">
           {testimonials.map((item, i) => {
             const position =
               (i - index + testimonials.length) % testimonials.length;
@@ -93,6 +93,9 @@ export default function Testimonial() {
             let zIndex = 0;
             let border = "none";
 
+            // Adjust positions for mobile
+            const isMobile = window.innerWidth < 768;
+
             if (position === 0) {
               scale = 1;
               translateY = -20;
@@ -102,30 +105,30 @@ export default function Testimonial() {
               border = "1px solid #BFF747";
             } else if (position === 1) {
               scale = 0.9;
-              translateX = -70;
-              translateY = -30;
-              rotate = -3;
+              translateX = isMobile ? -40 : -70;
+              translateY = isMobile ? -10 : -30;
+              rotate = isMobile ? -1 : -3;
               opacity = 0.9;
               zIndex = 40;
             } else if (position === 2) {
               scale = 0.9;
-              translateX = 70;
-              translateY = -30;
-              rotate = 3;
+              translateX = isMobile ? 40 : 70;
+              translateY = isMobile ? -10 : -30;
+              rotate = isMobile ? 1 : 3;
               opacity = 0.9;
               zIndex = 40;
             } else if (position === 3) {
               scale = 0.8;
-              translateX = -140;
-              translateY = -30;
-              rotate = -6;
+              translateX = isMobile ? -60 : -140;
+              translateY = isMobile ? -10 : -30;
+              rotate = isMobile ? -2 : -6;
               opacity = 0.6;
               zIndex = 30;
             } else if (position === 4) {
               scale = 0.8;
-              translateX = 140;
-              translateY = -30;
-              rotate = 6;
+              translateX = isMobile ? 60 : 140;
+              translateY = isMobile ? -10 : -30;
+              rotate = isMobile ? 2 : 6;
               opacity = 0.6;
               zIndex = 30;
             } else {
@@ -137,18 +140,13 @@ export default function Testimonial() {
                 key={i}
                 className="absolute w-full transition-all duration-700 ease-in-out"
                 style={{
-                  transform: `
-            translateX(${translateX}px)
-            translateY(${translateY}px)
-            scale(${scale})
-            rotate(${rotate}deg)
-          `,
+                  transform: `translateX(${translateX}px) translateY(${translateY}px) scale(${scale}) rotate(${rotate}deg)`,
                   opacity,
                   zIndex,
                 }}
               >
                 <div
-                  className="bg-[#171914] rounded-2xl p-10 text-white shadow-2xl"
+                  className="bg-[#171914] rounded-2xl p-5 md:p-10 text-white shadow-2xl"
                   style={{ border }}
                 >
                   <div className="flex items-center gap-6">
