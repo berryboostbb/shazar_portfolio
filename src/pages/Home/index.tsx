@@ -8,6 +8,7 @@ import Experience from "../../components/experience";
 import Testimonial from "../../components/testimonial";
 import CustomCursor from "../../components/CustomCursor";
 import WeAre from "../../components/WeAre";
+import Footer from "../../components/footer";
 
 function Home() {
   return (
@@ -62,6 +63,7 @@ function Home() {
       <Project />
       <Experience />
       <Testimonial />
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Grazle from "../../assets/Project/Rectangle41427.png";
 import MediTour from "../../assets/Project/Meditour.png";
 import Procuremnet from "../../assets/Project/Procurement.png";
 import Alhai from "../../assets/Project/Alhai.png";
+import { motion } from "framer-motion";
 export default function Project() {
   const projects = [
     {
@@ -66,18 +67,23 @@ export default function Project() {
           </button>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2">
-          {projects.map((project) => (
-            <div
+          {projects.map((project, index) => (
+            <motion.div
               key={project.id}
-              className="overflow-hiddencursor-pointer group rounded-3xl"
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="overflow-hidden cursor-pointer group rounded-3xl"
             >
-              <div className="overflow-hidden rounded-3xl border-3 border-transparent group-hover:border-[#BFF747]">
+              <div className="overflow-hidden rounded-3xl border-3 border-transparent group-hover:border-[#BFF747] transition-all duration-300">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full transition-all duration-500 h-125 group-hover:scale-105"
                 />
               </div>
+
               <div className="flex items-center justify-between mt-8 text-white lg:px-6">
                 <div>
                   <p className="text-base font-normal text-gray-400 font-bricolage">
@@ -87,14 +93,15 @@ export default function Project() {
                     {project.title}
                   </p>
                 </div>
-                <div className="min-w-15 group h-15 border border-[#BFF747] text-white hover:text-[#0E0E0E] flex justify-center items-center rounded-full transition-all duration-300 group-hover:bg-[#BFF747] group-hover:text-black">
+
+                <div className="min-w-15 h-15 border border-[#BFF747] text-white flex justify-center items-center rounded-full transition-all duration-300 group-hover:bg-[#BFF747] group-hover:text-black">
                   <Icon
                     icon="humbleicons:arrow-up"
                     className="text-3xl transition-all duration-300 rotate-45 group-hover:rotate-90"
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

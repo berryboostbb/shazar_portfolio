@@ -83,19 +83,16 @@ export default function Experience() {
             </div>
             <span
               className="absolute left-0 bottom-0 h-0.5 w-full bg-[#BFF747] 
-scale-x-0 opacity-0 
-origin-center 
-transition-all duration-700 ease-out 
-group-hover:scale-x-100 group-hover:opacity-100"
+                scale-x-0 opacity-0 origin-center transition-all duration-700 ease-out group-hover:scale-x-100 group-hover:opacity-100"
             ></span>{" "}
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 mt-20 gap-y-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7">
+      <div className="grid grid-cols-1 mt-20 rounded-2xl gap-y-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-[#060606] p-4 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:bg-[#111111]"
+            className="bg-[#060606]  border-r border-[#C1C1C1]/40 last:border-0 p-4 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:bg-[#111111]"
           >
             <img
               src={skill.image}
