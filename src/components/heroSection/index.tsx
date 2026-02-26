@@ -76,10 +76,12 @@ export default function Hersection() {
 
               <div className="mx-5 mt-5 lg:mx-40">
                 <p className="text-start md:text-[18px] text-base w-full font-bricolage mt-3">
-                  Mauris risus augue pulvinar augue sed et. Risus volutpat
-                  posuere commodo aenean in. Tristique at lectus aliquam quis
-                  aliquam aenean. Ipsum sit proin dolor nam odio dignissim vel
-                  integer.
+                  I engineer high-performance digital platforms that turn bold
+                  ideas into scalable web solutions. With deep full-stack
+                  expertise and precision-driven architecture, I craft seamless
+                  user experiences that perform at every level. I don’t just
+                  build products — I create technology that accelerates growth
+                  and shapes the future.
                 </p>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4 mx-5 mt-10 lg:mx-40">
@@ -97,7 +99,7 @@ export default function Hersection() {
                     </span>
                   </button>
                 </a>
-                <button className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 cursor-pointer mt-5">
+                <button className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 mt-5">
                   <div className="h-14 bg-[#292929] min-w-14 rounded-full flex justify-center items-center">
                     {" "}
                     <Icon

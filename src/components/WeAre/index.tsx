@@ -37,7 +37,7 @@ export default function HeroSection() {
                 className="text-2xl text-[#BFF747]"
               />
               <p className="text-[18px] font-semibold text-white font-bricolage">
-                We Are We
+                Who am i
               </p>
             </div>
             <p className="font-bigshoulders text-[40px] md:text-[56px] mt-6 leading-[110%] font-semibold text-white">
@@ -47,9 +47,11 @@ export default function HeroSection() {
           </motion.div>
           <motion.div variants={itemVariants} className="lg:w-[40%] w-full">
             <p className="font-bricolage text-[18px] font-normal text-white">
-              Mauris risus augue pulvinar augue sed et. Risus volutpat posuere
-              commodo aenean in. Tristique at lectus aliquam quis aliquam
-              aenean. Ipsum sit proin dolor nam odio dignissim vel integer.
+              I am a results-driven Full-Stack Developer building scalable
+              digital products. With 6+ years of expertise in MERN Stack and
+              React Native, I turn ideas into powerful web and mobile solutions.
+              I don’t just write code — I architect performance, security, and
+              long-term growth for every project I work on.
             </p>
 
             <button className="relative cursor-pointer mt-6 overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">

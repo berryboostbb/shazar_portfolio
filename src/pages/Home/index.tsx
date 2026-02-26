@@ -25,7 +25,7 @@ function Home() {
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      rootMargin: "-50% 0px -50% 0px", // triggers when section is near the center
+      rootMargin: "-50% 0px -50% 0px",
       threshold: 0,
     });
 
@@ -66,7 +66,8 @@ function Home() {
                   style={{ fontSize: "24px", color: "#BFF747" }}
                 />
                 <p className="text-2xl text-white uppercase font-bigShoulders">
-                  The Best Solution
+                  {/* The Best Solution */}
+                  Innovation Without Limits
                 </p>
               </div>
             ))}

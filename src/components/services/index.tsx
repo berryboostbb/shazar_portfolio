@@ -6,25 +6,25 @@ export default function Services() {
       id: "01",
       title: "Mobile App Development",
       description:
-        "Mi iaculis elementum fermentum morbi sit aliquet. Tellus tortor in pretium.",
+        "Cross-platform mobile applications built with React Native, delivering high performance, smooth UI/UX, and scalable architecture for both iOS and Android platforms.",
     },
     {
       id: "02",
       title: "Web Development",
       description:
-        "Mi iaculis elementum fermentum morbi sit aliquet. Tellus tortor in pretium.",
+        "Modern, responsive, and high-performance web applications using React.js and Next.js with clean architecture, SEO optimization, and scalable frontend structure.",
     },
     {
       id: "03",
       title: "API Integration",
       description:
-        "Mi iaculis elementum fermentum morbi sit aliquet. Tellus tortor in pretium.",
+        "Secure RESTful API development and third-party integrations including payment gateways, authentication systems, cloud services, and real-time data handling.",
     },
     {
       id: "04",
-      title: "Full Stack",
+      title: "Full Stack Development",
       description:
-        "Mi iaculis elementum fermentum morbi sit aliquet. Tellus tortor in pretium.",
+        "Complete MERN stack solutions including MongoDB, Express.js, React, and Node.js with optimized backend logic, authentication, dashboards, and deployment support.",
     },
   ];
 

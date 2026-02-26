@@ -8,14 +8,14 @@ export default function Project() {
   const projects = [
     {
       id: 1,
-      category: "Web / Development",
+      category: "Full-Stack Web & Mobile Development",
       title: "MediTour",
       image: MediTour,
       link: "https://meditour.global/",
     },
     {
       id: 2,
-      category: "Web / Development",
+      category: "Full-Stack Web Development",
       title: "Grazle",
       image: Grazle,
       link: "https://grazle-web-57uc.vercel.app/",
@@ -23,14 +23,14 @@ export default function Project() {
 
     {
       id: 3,
-      category: "Web / Development",
+      category: "Full-Stack Web & Mobile Development",
       title: "Procurement League",
       image: Procuremnet,
       link: "https://procurementleague.com/",
     },
     {
       id: 4,
-      category: "Web / Development",
+      category: "Full-Stack Web & Mobile Development",
       title: "Alhai ",
       image: Alhai,
       link: "https://alhai.net/",

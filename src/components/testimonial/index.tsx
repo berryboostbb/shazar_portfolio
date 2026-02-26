@@ -4,36 +4,36 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    name: "Charlie Rosser",
-    role: "Senior Manager",
+    name: "Michael Anderson",
+    role: "CEO, TechNova Solutions",
     image: dummay,
-    text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
+    text: "Working with Shazar was one of the best decisions for our startup. His 6+ years of MERN stack experience truly shows in his clean architecture, scalable backend structure, and smooth React frontend implementation. He delivered our SaaS platform ahead of schedule with exceptional performance optimization.",
   },
   {
-    name: "John Carter",
-    role: "Product Head",
+    name: "Sarah Williams",
+    role: "Product Manager, FinEdge",
     image:
       "https://as2.ftcdn.net/jpg/02/44/43/91/1000_F_244439183_Wn6zbxmjuJTCaRodCGH9MFDUL1r3yCuK.jpg",
-    text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
+    text: "Shazar’s expertise in React Native helped us launch our mobile app on both iOS and Android seamlessly. The UI/UX was pixel-perfect, and the app performance exceeded our expectations. His communication and problem-solving skills made the entire development process smooth.",
   },
   {
-    name: "Sophia Turner",
-    role: "Marketing Head",
+    name: "Daniel Roberts",
+    role: "Founder, EcomBridge",
     image:
       "https://thumbs.dreamstime.com/b/vector-design-avatar-dummy-symbol-collection-image-icon-stock-isolated-object-set-illustration-137162606.jpg",
-    text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
+    text: "We hired Shazar for a complete MERN stack eCommerce solution, and he delivered beyond expectations. From secure authentication to advanced admin dashboards and API integrations, everything was built with scalability in mind. Highly recommended for full-stack projects.",
   },
   {
-    name: "Emma Watson",
-    role: "Marketing Lead",
+    name: "Emily Carter",
+    role: "CTO, StartupX",
     image: dummay,
-    text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
+    text: "Shazar has a deep understanding of modern JavaScript frameworks. His ability to architect complex backend systems with Node.js and MongoDB while maintaining a beautiful React frontend is impressive. He thinks long-term and builds products that scale.",
   },
   {
-    name: "David Miller",
-    role: "CEO Founder",
+    name: "James Wilson",
+    role: "Operations Director, AppFlow",
     image: "https://cdn-icons-png.freepik.com/512/9347/9347560.png",
-    text: "Sit odio in dictum venenatis orci mauris nunc sem. Consectetur dui morbi sed morbi justo sit erat. Tincidunt turpis erat purus sagittis facilisi netus aliquam arcu aenea.",
+    text: "Our React Native application performance improved drastically after Shazar optimized the codebase. His debugging skills, API structuring, and state management implementation were top-tier. A true professional with enterprise-level development experience.",
   },
 ];
 export default function Testimonial() {
@@ -92,8 +92,6 @@ export default function Testimonial() {
             let opacity = 0;
             let zIndex = 0;
             let border = "none";
-
-            // Adjust positions for mobile
             const isMobile = window.innerWidth < 768;
 
             if (position === 0) {

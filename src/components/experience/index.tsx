@@ -45,10 +45,10 @@ export default function Experience() {
     { name: "Express.js", percent: "91%", image: Express },
     { name: "MongoDB", percent: "85%", image: Mongo },
     { name: "JavaScript", percent: "92%", image: JS },
-    { name: "TypeScript", percent: "92%", image: TS },
+    { name: "TypeScript", percent: "99%", image: TS },
     { name: "Redux", percent: "94%", image: Redux },
     { name: "Firebase", percent: "98%", image: Firebase },
-    { name: "Stripe", percent: "98%", image: Stripe },
+    { name: "Stripe", percent: "96%", image: Stripe },
     { name: "Socket.io ", percent: "94%", image: Socket },
     { name: "Tailwind css", percent: "92%", image: Tailwind },
     { name: "Material Ui", percent: "94%", image: MUI },
@@ -63,7 +63,6 @@ export default function Experience() {
           My Experience
         </p>
       </div>
-
       <p className="font-bigshoulders text-[40px] md:text-[56px] mt-6 leading-[110%] font-semibold text-white">
         My Work <span className="text-[#BFF747]">Experience</span>
       </p>
