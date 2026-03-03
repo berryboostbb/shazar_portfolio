@@ -14,6 +14,8 @@ import Git from "../../assets/git.png";
 import Socket from "../../assets/socket.png";
 import Express from "../../assets/express.webp";
 import Stripe from "../../assets/Stripe.png";
+import Python from "../../assets/python.png";
+
 export default function Experience() {
   const experiences = [
     {
@@ -38,11 +40,12 @@ export default function Experience() {
     },
   ];
   const skills = [
-    { name: "React js", percent: "94%", image: ReactLogo },
+    { name: "React js", percent: "98%", image: ReactLogo },
     { name: "React Native", percent: "94%", image: ReactLogo },
     { name: "Next.js", percent: "90%", image: Next },
     { name: "Node.js", percent: "88%", image: Node },
     { name: "Express.js", percent: "91%", image: Express },
+    { name: "Python", percent: "95%", image: Python },
     { name: "MongoDB", percent: "85%", image: Mongo },
     { name: "JavaScript", percent: "92%", image: JS },
     { name: "TypeScript", percent: "99%", image: TS },

@@ -36,7 +36,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="py-6 bg-transparent">
+    <header className="py-6 bg-transparent ">
       <div className="flex items-center justify-between xl:px-32 2xl:px-40 md:px-10">
         <img src={Logo} alt="Shazar Khan Logo" className="w-auto h-12" />
         <nav className="hidden gap-6 font-medium text-white md:flex font-bricolage">
