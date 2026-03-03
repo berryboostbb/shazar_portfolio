@@ -1,8 +1,9 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
-import CV from "../../assets/SalarySlip-Imran Rao_February_2026.pdf";
+import CV from "../../assets/Shazar_2 Resume.pdf";
 export default function Hersection() {
   const headings = [
+    "AI Powerd Solutions",
     "Web Developer",
     "Frontend Developer",
     "Mobile App Developer",
