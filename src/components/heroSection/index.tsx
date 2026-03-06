@@ -100,7 +100,7 @@ export default function Hersection() {
                     </span>
                   </button>
                 </a>
-                <button className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 mt-5">
+                {/* <button className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 mt-5">
                   <div className="h-14 bg-[#292929] min-w-14 rounded-full flex justify-center items-center">
                     {" "}
                     <Icon
@@ -109,7 +109,7 @@ export default function Hersection() {
                     />{" "}
                   </div>
                   View Reel
-                </button>
+                </button> */}
               </div>
               <div className="absolute flex gap-5 text-white font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-6 top-100 md:top-120 lg:top-48">
                 <p className="text-sm">Facebook</p>
