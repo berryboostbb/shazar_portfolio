@@ -142,7 +142,7 @@ export default function Hersection() {
                   </div>
                 )}
               </div>
-              <div className="absolute flex gap-5 text-white font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-6 top-100 md:top-120 lg:top-48">
+              <div className="absolute flex gap-5 text-white font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-25 top-110 md:top-120 lg:top-48">
                 <a
                   href="https://www.fiverr.com/berryboost_bb"
                   target="_blank"
