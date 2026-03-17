@@ -53,19 +53,25 @@ export default function HeroSection() {
               I don’t just write code — I architect performance, security, and
               long-term growth for every project I work on.
             </p>
-
-            <button className="relative cursor-pointer mt-6 overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
-              <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
-              <span className="relative z-10 flex items-center gap-3">
-                <span className="text-black transition-colors duration-500 group-hover:text-black">
-                  More About Me
+            <a
+              href="https://wa.me/923312227735"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group"
+            >
+              <button className="relative cursor-pointer mt-6 overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+                <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
+                <span className="relative z-10 flex items-center gap-3">
+                  <span className="text-black transition-colors duration-500 group-hover:text-black">
+                    Contact Me
+                  </span>
+                  <Icon
+                    icon="humbleicons:arrow-up"
+                    className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
+                  />
                 </span>
-                <Icon
-                  icon="humbleicons:arrow-up"
-                  className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
-                />
-              </span>
-            </button>
+              </button>
+            </a>
           </motion.div>
         </motion.div>
         <motion.div

@@ -56,19 +56,24 @@ export default function Project() {
               My Featured <span className="text-[#BFF747]">Portfolio</span>
             </p>
           </div>
-
-          <button className="relative cursor-pointer overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
-            <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
-            <span className="relative z-10 flex items-center gap-3">
-              <span className="text-black transition-colors duration-500 group-hover:text-black">
-                View All Projects
+          <a
+            href="https://github.com/shazar007"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="relative cursor-pointer overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+              <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
+              <span className="relative z-10 flex items-center gap-3">
+                <span className="text-black transition-colors duration-500 group-hover:text-black">
+                  View All Projects
+                </span>
+                <Icon
+                  icon="humbleicons:arrow-up"
+                  className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
+                />
               </span>
-              <Icon
-                icon="humbleicons:arrow-up"
-                className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
-              />
-            </span>
-          </button>
+            </button>
+          </a>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2">
           {projects.map((project, index) => (

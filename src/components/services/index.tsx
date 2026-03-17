@@ -69,14 +69,14 @@ export default function Services() {
             <div className="relative flex items-center md:w-[30%] justify-start w-full overflow-hidden xl:justify-start">
               <div className="flex items-center gap-3 transition-transform duration-500 transform translate-x-30 md:translate-x-0 lg:translate-x-25 xl:translate-x-30 2xl:translate-x-69 group-hover:translate-x-0 xl:group-hover:translate-x-0 2xl:group-hover:translate-x-30">
                 <div className="min-w-10 h-10 border border-green-400 text-[#BFF747] flex justify-center items-center rounded-full transition-all duration-300 group-hover:bg-[#BFF747] group-hover:border-green-400">
-                  <Icon
+                  {/* <Icon
                     icon="humbleicons:arrow-up"
                     className="text-xl transition-all duration-300 rotate-45 group-hover:text-[#0E0E0E]"
-                  />
+                  /> */}
                 </div>
-                <span className="text-sm font-normal text-white w-21 font-bricolage">
+                {/* <span className="text-sm font-normal text-white w-21 font-bricolage">
                   Read More
-                </span>
+                </span> */}
               </div>
             </div>
           </motion.div>
