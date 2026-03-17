@@ -76,7 +76,7 @@ export default function Hersection() {
               </p>
 
               <div className="mx-5 mt-5 lg:mx-40">
-                <p className="text-start md:text-[18px] text-base w-full font-bricolage mt-3">
+                <p className="text-start md:text-[18px] text-sm w-full font-bricolage mt-3">
                   I engineer high-performance digital platforms that turn bold
                   ideas into scalable web solutions. With deep full-stack
                   expertise and precision-driven architecture, I craft seamless
@@ -85,9 +85,9 @@ export default function Hersection() {
                   and shapes the future.
                 </p>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-4 mx-5 mt-10 lg:mx-40">
+              <div className="flex flex-wrap items-center justify-center gap-2 mx-5 mt-10 md:gap-4 lg:mx-40">
                 <a href={CV} download="Shazar-Khan-CV.pdf" className="mt-4">
-                  <button className="relative cursor-pointer overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
+                  <button className="relative cursor-pointer overflow-hidden group flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
                     <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
                     <span className="relative z-10 flex items-center gap-3">
                       <span className="text-black transition-colors duration-500 group-hover:text-black">
@@ -104,7 +104,7 @@ export default function Hersection() {
                   onClick={() => {
                     setOpenVideo(true);
                   }}
-                  className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 mt-5"
+                  className="bg-[#0E0E0E] cursor-pointer flex gap-2 items-center font-bricolage font-medium text-white rounded-full h-14 w-45 mt-3"
                 >
                   <div className="h-14 bg-[#292929] min-w-14 rounded-full flex justify-center items-center">
                     {" "}
@@ -142,7 +142,7 @@ export default function Hersection() {
                   </div>
                 )}
               </div>
-              <div className="absolute flex gap-5 text-white font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-25 top-110 md:top-120 lg:top-48">
+              <div className="relative flex gap-5 text-white top-10 md:absolute font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-20 md:top-120 lg:top-48">
                 <a
                   href="https://www.fiverr.com/berryboost_bb"
                   target="_blank"
