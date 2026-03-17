@@ -126,7 +126,7 @@ export default function Hersection() {
                     >
                       <button
                         onClick={() => setOpenVideo(false)}
-                        className="absolute text-xl cursor-pointer top-2 right-2"
+                        className="absolute text-xl cursor-pointer top-4 right-2"
                       >
                         ✕
                       </button>
@@ -143,9 +143,27 @@ export default function Hersection() {
                 )}
               </div>
               <div className="absolute flex gap-5 text-white font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-6 top-100 md:top-120 lg:top-48">
-                <p className="text-sm">Facebook</p>
-                <p className="text-sm">Twitter</p>
-                <p className="text-sm">Linkedin</p>
+                <a
+                  href="https://www.fiverr.com/berryboost_bb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="text-sm">Fiverr</p>
+                </a>
+                <a
+                  href="https://x.com/shazarkhan_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="text-sm">X.com</p>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/shazarkhan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="text-sm">Linkedin</p>
+                </a>
               </div>
             </div>
           </div>

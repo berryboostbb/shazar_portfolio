@@ -141,6 +141,22 @@ export default function Footer() {
                 Email
               </p>
             </a>
+            <a
+              href="https://x.com/shazarkhan_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group"
+            >
+              <div className="flex items-center justify-center h-10 w-10 rounded-full bg-[#292929] group-hover:bg-[#BFF747] transition duration-300">
+                <Icon
+                  icon="garden:twitter-fill-12"
+                  className="text-xl text-white transition duration-300 group-hover:text-black"
+                />
+              </div>
+              <p className="text-sm text-white group-hover:text-[#BFF747] transition duration-300">
+                X.com
+              </p>
+            </a>
           </motion.div>
         </motion.div>
 
