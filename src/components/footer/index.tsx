@@ -15,7 +15,6 @@ export default function Footer() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const navLinks = [
     { name: "Home", hash: "#home" },
     { name: "About", hash: "#about" },
