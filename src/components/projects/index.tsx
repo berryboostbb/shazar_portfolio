@@ -1,122 +1,218 @@
+import { useState } from "react";
 import { Icon } from "@iconify/react";
-import Grazle from "../../assets/Project/Rectangle41427.png";
-import MediTour from "../../assets/Project/Meditour.png";
-import Procuremnet from "../../assets/Project/Procurement.png";
-import Alhai from "../../assets/Project/Alhai.png";
 import { motion } from "framer-motion";
+
+// IMAGES
+import MediTour from "../../assets/Project/Meditour.png";
+import Grazle from "../../assets/Project/Rectangle41427.png";
+import Alhai from "../../assets/Project/Alhai.png";
+import AIHiring from "../../assets/Project/AI-Hiring.png";
+import Pocho from "../../assets/Project/PochoChatBot.png";
+import BerryBoost from "../../assets/Project/berryboost.png";
+
 export default function Project() {
+  const filters = [
+    { name: "All", color: "#BFF747" },
+    { name: "AI Projects", color: "#F76747" },
+    { name: "E-Commerce", color: "#474AF7" },
+    { name: "Saas", color: "#B147F7" },
+    { name: "Others", color: "#F747CB" },
+  ];
+
+  const [activeFilter, setActiveFilter] = useState("All");
+
   const projects = [
     {
       id: 1,
-      category: "Full-Stack Web & Mobile Development",
+      type: "Others",
       title: "MediTour",
+      category: "Medical Tourism Platform",
       image: MediTour,
-      link: "https://meditour.global/",
     },
     {
       id: 2,
-      category: "Full-Stack Web Development",
+      type: "E-Commerce",
       title: "Grazle",
+      category: "Gulf E-Commerce Platform",
       image: Grazle,
-      link: "https://grazle-web-57uc.vercel.app/",
     },
-
     {
       id: 3,
-      category: "Full-Stack Web & Mobile Development",
-      title: "Procurement League",
-      image: Procuremnet,
-      link: "https://procurementleague.com/",
+      type: "Others",
+      title: "Al-Hai",
+      category: "Real-State Platform",
+      image: Alhai,
     },
     {
       id: 4,
-      category: "Full-Stack Web & Mobile Development",
-      title: "Alhai ",
-      image: Alhai,
-      link: "https://alhai.net/",
+      type: "AI Projects",
+      title: "Pocho ChatBot",
+      category: "For Seamless Chatting",
+      image: Pocho,
     },
+    {
+      id: 5,
+      type: "AI Projects",
+      title: "AI Hiring & Assessment",
+      category: "Complete Hiring Platform",
+      image: AIHiring,
+    },
+    // {
+    //   id: 6,
+    //   type: "Saas",
+    //   title: "BerryBoost",
+    //   category: "Sales Navigation Solution",
+    //   image: BerryBoost,
+    // },
   ];
+
+  const filteredProjects =
+    activeFilter === "All"
+      ? projects
+      : projects.filter((p) => p.type === activeFilter);
+
+  const activeColor =
+    filters.find((f) => f.name === activeFilter)?.color || "#BFF747";
 
   return (
     <div className="bg-[#0E0E0E]">
-      <div className="px-5 py-10 md:py-25 xl:px-32 2xl:px-40 md:px-10">
-        <div className="flex flex-wrap items-center justify-between gap-5">
-          <div>
-            <div className="flex items-center gap-3">
-              <Icon
-                icon="mdi:star-four-points"
-                className="text-2xl text-[#BFF747]"
-              />
-              <p className="text-[18px] font-semibold text-white font-bricolage">
-                Projects
-              </p>
-            </div>
-
-            <p className="font-bigshoulders text-[40px] md:text-[56px] mt-6 leading-[110%] font-semibold text-white">
-              My Featured <span className="text-[#BFF747]">Portfolio</span>
+      <div className="py-12 md:py-24">
+        {/* HEADER */}
+        <div className="px-5 xl:px-32 2xl:px-40 md:px-10">
+          <div className="flex items-center gap-3">
+            <Icon
+              icon="mdi:star-four-points"
+              className="text-2xl text-[#BFF747]"
+            />
+            <p className="text-[18px] font-semibold text-white font-bricolage">
+              Projects
             </p>
           </div>
-          <a
-            href="https://github.com/shazar007"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="relative cursor-pointer overflow-hidden hidden group md:flex gap-3 justify-center items-center h-14 w-50 font-bricolage border border-[#BFF747] bg-[#BFF747] rounded-full font-semibold text-[16px] text-white transition-colors duration-300">
-              <span className="absolute inset-0 transition-transform duration-500 ease-out -translate-x-full bg-white rounded-full group-hover:translate-x-0"></span>
-              <span className="relative z-10 flex items-center gap-3">
-                <span className="text-black transition-colors duration-500 group-hover:text-black">
-                  View All Projects
-                </span>
-                <Icon
-                  icon="humbleicons:arrow-up"
-                  className="text-xl text-black transition-transform duration-500 rotate-45 group-hover:rotate-90 group-hover:text-black"
-                />
-              </span>
-            </button>
-          </a>
-        </div>
-        <div className="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="overflow-hidden cursor-pointer group rounded-3xl"
-            >
-              <div className="overflow-hidden rounded-3xl border-3 border-transparent group-hover:border-[#BFF747] transition-all duration-300">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="object-fill w-full transition-all duration-500 h-70 md:h-60 lg:h-80 2xl:h-126 xl:h-100 group-hover:scale-105"
-                />
-              </div>
 
-              <div className="flex items-center justify-between mt-8 text-white lg:px-6">
-                <div>
-                  <p className="text-base font-normal text-gray-400 font-bricolage">
-                    {project.category}
-                  </p>
-                  <p className="text-[32px] md:text-[36px] font-bold font-bigshoulders">
-                    {project.title}
-                  </p>
-                </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+          <h2 className="font-bigshoulders text-[40px] md:text-[56px] mt-6 font-bold text-white">
+            My Featured <span className="text-[#BFF747]">Portfolio</span>
+          </h2>
+        </div>
+
+        {/* FILTERS */}
+        <div className="mt-12">
+          {/* TOP BORDER */}
+          <div className="w-full border-t border-[#BFF747]" />
+
+          {/* FILTER ITEMS */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 sm:gap-x-8 md:justify-between py-6 px-5 xl:px-32">
+            {filters.map((f) => {
+              const isActive = activeFilter === f.name;
+
+              return (
+                <div
+                  key={f.name}
+                  onClick={() => !isActive && setActiveFilter(f.name)}
+                  className={`flex items-center gap-3 group ${
+                    isActive ? "cursor-default" : "cursor-pointer"
+                  }`}
                 >
-                  <div className="min-w-15 h-15 border border-[#BFF747] text-white flex justify-center items-center rounded-full transition-all duration-300 group-hover:bg-[#BFF747] group-hover:text-black">
-                    <Icon
-                      icon="humbleicons:arrow-up"
-                      className="text-3xl transition-all duration-300 rotate-45 group-hover:rotate-90"
-                    />
+                  {/* FIXED WRAPPER */}
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    {/* INNER CIRCLE */}
+                    <div
+                      className={`relative flex items-center justify-center 
+                          w-3 h-3 rounded-full overflow-hidden
+                          transition-all duration-300 ease-out
+                          ${!isActive && "group-hover:scale-[2.6]"}`}
+                      style={{ backgroundColor: f.color }}
+                    >
+                      {/* ARROW */}
+                      <Icon
+                        icon="tdesign:arrow-up"
+                        className={`absolute text-black rotate-45 text-xs
+                            translate-y-4 opacity-0
+                            transition-all duration-300 ease-out
+                            ${
+                              !isActive &&
+                              "group-hover:translate-y-0 group-hover:opacity-100"
+                            }`}
+                      />
+                    </div>
                   </div>
-                </a>
-              </div>
-            </motion.div>
-          ))}
+
+                  {/* TEXT */}
+                  <span className="text-white text-[13px] sm:text-[15px] whitespace-nowrap">
+                    {f.name}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* BOTTOM BORDER */}
+          <div className="w-full border-b border-[#BFF747]" />
+        </div>
+
+        {/* PROJECT GRID */}
+        <div className="px-5 xl:px-32 2xl:px-40 md:px-10">
+          <div className="mt-16 space-y-16">
+            {Array.from({ length: Math.ceil(filteredProjects.length / 2) }).map(
+              (_, rowIndex) => {
+                const rowItems = filteredProjects.slice(
+                  rowIndex * 2,
+                  rowIndex * 2 + 2,
+                );
+
+                return (
+                  <div key={rowIndex} className="relative">
+                    {/* 🔥 TOP LINE */}
+                    <div
+                      className="absolute top-0 left-0 w-full h-[1px]"
+                      style={{ backgroundColor: activeColor ,opacity: 0.2  }}
+                    />
+
+                    {/* ROW */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 ">
+                      {rowItems.map((project, index) => (
+                        <motion.div
+                          key={project.id}
+                          initial={{ opacity: 0, y: 80 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.6, delay: index * 0.1 }}
+                          viewport={{ once: true }}
+                          className="relative group cursor-pointer flex justify-center"
+                        >
+                          {/* SAME CARD — NO CHANGE */}
+                          <div className="w-full max-w-[588px] h-auto md:h-[640px] flex flex-col items-center justify-start py-10 px-6 relative transition duration-500">
+                            <div
+                              className="absolute inset-0 scale-y-0 origin-top transition duration-500 group-hover:scale-y-100 md:group-hover:scale-y-95"
+                              style={{ backgroundColor: activeColor }}
+                            />
+
+                            <div className="relative z-10 text-center">
+                              <h3 className="text-white group-hover:text-black text-[32px] md:text-[40px] font-bold font-bigshoulders">
+                                {project.title}
+                              </h3>
+
+                              <p className="text-white group-hover:text-black text-[18px] md:text-[22px] mt-2 font-bigshoulders">
+                                {project.category}
+                              </p>
+
+                              <div className="mt-10 flex justify-center">
+                                <div className="w-[260px] h-[280px] md:w-[330px] md:h-[360px] overflow-hidden flex items-center justify-center transition duration-500 group-hover:scale-110">
+                                  <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-contain"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                );
+              },
+            )}
+          </div>
         </div>
       </div>
     </div>
