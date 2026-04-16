@@ -85,7 +85,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="bg-[#292929] font-bigshoulders h-80 w-full md:w-[calc(33.33%-18.66px)] p-10 md:p-5 lg:p-10 text-[#C1C1C1]"
           >
-            <p className="text-[84px] font-bold">
+            <p className=" text-8xl md:text-6xl lg:text-[84px] font-bold">
               <CountUp start={0} end={10} duration={6} suffix="+" />
             </p>
             <p className="lg:text-[32px] text-[24px] font-bold">Years Of My</p>
@@ -98,7 +98,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="bg-[#292929] md:mt-20 mt-0 font-bigshoulders h-80 w-full md:w-[calc(33.33%-18.66px)] p-10 md:p-5 lg:p-10 text-[#C1C1C1]"
           >
-            <p className="text-[84px] font-bold">
+            <p className=" text-8xl md:text-6xl lg:text-[84px] font-bold">
               <CountUp start={0} end={1400} duration={2} suffix="k" />
             </p>
             <p className="lg:text-[32px] text-[24px] font-bold">
@@ -112,7 +112,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="bg-[#292929] font-bigshoulders w-full h-80 md:w-[calc(33.33%-18.66px)] p-10 md:p-5 lg:p-10 text-[#C1C1C1]"
           >
-            <p className="text-[84px] font-bold">
+            <p className=" text-8xl md:text-6xl lg:text-[84px] font-bold">
               <CountUp start={0} end={500} duration={2} suffix="k" />
             </p>
             <p className="lg:text-[32px] text-[24px] font-bold">Successfully</p>

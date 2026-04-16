@@ -171,16 +171,18 @@ export default function Footer() {
       </footer>
 
       {showScroll && (
-        <div
-          onClick={() =>
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-          }
-          className="bg-[#BFF747] h-12 w-12 rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer shadow-lg hover:scale-110 transition duration-300"
-        >
-          <Icon
-            icon="icon-park-outline:arrow-up"
-            className="text-2xl text-black"
-          />
+        <div className="w-full">
+          <div
+            onClick={() =>
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+            }
+            className="bg-[#BFF747] h-12 w-12 rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer shadow-lg hover:scale-110 transition duration-300"
+          >
+            <Icon
+              icon="icon-park-outline:arrow-up"
+              className="text-2xl text-black"
+            />
+          </div>
         </div>
       )}
     </>

@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
-import CV from "../../assets/Shazar_2 Resume.pdf";
+import CV from "../../assets/Resume Shazar Khan 2026 AI.pdf";
 export default function Hersection() {
   const headings = [
     "AI Powerd Solutions",
@@ -142,7 +142,7 @@ export default function Hersection() {
                   </div>
                 )}
               </div>
-              <div className="relative flex gap-5 text-white top-10 md:absolute font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-20 md:top-120 lg:top-48">
+              <div className="relative flex w-20 gap-5 text-white md:auto top-10 md:absolute font-bricolage lg:rotate-270 2xl:-left-100 xl:-left-30 rotate left-20 md:top-120 lg:top-48">
                 <a
                   href="https://www.fiverr.com/berryboost_bb"
                   target="_blank"

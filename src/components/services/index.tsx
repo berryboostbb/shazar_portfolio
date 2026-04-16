@@ -54,15 +54,15 @@ export default function Services() {
               ease: "easeOut",
             }}
             viewport={{ once: true, amount: 0.2 }}
-            className="group border border-transparent  hover:border-[#BFF747] bg-[#0E0E0E] rounded-3xl flex flex-wrap items-center gap-5 md:p-10 p-5 text-white font-bigshoulders lg:flex-nowrap 2xl:gap-40 lg:gap-10 transition-all duration-300 overflow-hidden relative"
+            className="group border border-transparent  hover:border-[#BFF747] bg-[#0E0E0E] rounded-3xl flex flex-wrap items-center md:items-start lg:items-center  gap-5 md:p-10 p-5 text-white font-bigshoulders lg:flex-nowrap 2xl:gap-40 lg:gap-10 transition-all duration-300 overflow-hidden relative"
           >
             <p className="text-[24px] font-semibold">{service.id}</p>
 
-            <p className="text-[24px] w-full lg:w-[25%] md:w-[20%] font-semibold">
+            <p className="text-[24px] w-full lg:w-[25%]  md:w-[30%] font-semibold">
               {service.title}
             </p>
 
-            <p className="w-full md:w-[45%] lg:w-[50%] text-base font-normal font-bricolage">
+            <p className="w-full md:w-[50%] lg:w-[50%] text-base font-normal font-bricolage">
               {service.description}
             </p>
 

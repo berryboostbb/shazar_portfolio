@@ -100,7 +100,7 @@ export default function Project() {
           <div className="w-full border-t border-[#BFF747]" />
 
           {/* FILTER ITEMS */}
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 sm:gap-x-8 md:justify-between py-6 px-5 xl:px-32">
+          <div className="flex flex-wrap justify-center px-5 py-6 gap-x-6 gap-y-4 sm:gap-x-8 md:justify-between xl:px-32">
             {filters.map((f) => {
               const isActive = activeFilter === f.name;
 
@@ -113,7 +113,7 @@ export default function Project() {
                   }`}
                 >
                   {/* FIXED WRAPPER */}
-                  <div className="w-8 h-8 flex items-center justify-center">
+                  <div className="flex items-center justify-center w-8 h-8">
                     {/* INNER CIRCLE */}
                     <div
                       className={`relative flex items-center justify-center 
@@ -151,7 +151,7 @@ export default function Project() {
 
         {/* PROJECT GRID */}
         <div className="px-5 xl:px-32 2xl:px-40 md:px-10">
-          <div className="mt-16 space-y-16">
+          <div className="mt-16 ">
             {Array.from({ length: Math.ceil(filteredProjects.length / 2) }).map(
               (_, rowIndex) => {
                 const rowItems = filteredProjects.slice(
@@ -161,14 +161,13 @@ export default function Project() {
 
                 return (
                   <div key={rowIndex} className="relative">
-                    {/* 🔥 TOP LINE */}
                     <div
-                      className="absolute top-0 left-0 w-full h-[1px]"
-                      style={{ backgroundColor: activeColor ,opacity: 0.2  }}
+                      className="absolute top-0 left-0 w-full h-0"
+                      style={{ backgroundColor: activeColor, opacity: 0.2 }}
                     />
 
                     {/* ROW */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 ">
                       {rowItems.map((project, index) => (
                         <motion.div
                           key={project.id}
@@ -176,17 +175,17 @@ export default function Project() {
                           whileInView={{ opacity: 1, y: 0 }}
                           transition={{ duration: 0.6, delay: index * 0.1 }}
                           viewport={{ once: true }}
-                          className="relative group cursor-pointer flex justify-center"
+                          className="relative flex justify-center w-full cursor-pointer group"
                         >
                           {/* SAME CARD — NO CHANGE */}
-                          <div className="w-full max-w-[588px] h-auto md:h-[640px] flex flex-col items-center justify-start py-10 px-6 relative transition duration-500">
+                          <div className="relative flex flex-col items-center justify-start w-full h-auto transition duration-500 md:h-160">
                             <div
-                              className="absolute inset-0 scale-y-0 origin-top transition duration-500 group-hover:scale-y-100 md:group-hover:scale-y-95"
+                              className="absolute inset-0 transition duration-500 origin-top scale-y-0 md:h-160 group-hover:scale-y-100 md:group-hover:scale-y-95"
                               style={{ backgroundColor: activeColor }}
                             />
 
                             <div className="relative z-10 text-center">
-                              <h3 className="text-white group-hover:text-black text-[32px] md:text-[40px] font-bold font-bigshoulders">
+                              <h3 className="text-white pt-7 group-hover:text-black text-[32px] md:text-[40px] font-bold font-bigshoulders">
                                 {project.title}
                               </h3>
 
@@ -194,12 +193,12 @@ export default function Project() {
                                 {project.category}
                               </p>
 
-                              <div className="mt-10 flex justify-center">
-                                <div className="w-[260px] h-[280px] md:w-[330px] md:h-[360px] overflow-hidden flex items-center justify-center transition duration-500 group-hover:scale-110">
+                              <div className="flex justify-center mt-10">
+                                <div className="w-65 h-70 md:w-82.5 md:h-90 overflow-hidden flex items-center justify-center transition duration-500 group-hover:scale-110">
                                   <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-contain"
+                                    className="object-contain w-full h-full"
                                   />
                                 </div>
                               </div>

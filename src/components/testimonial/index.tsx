@@ -80,7 +80,7 @@ export default function Testimonial() {
             </div>
           </div>
         </div>
-        <div className="relative xl:w-1/2 w-full h-96 md:h-112.5 flex items-center justify-center overflow-visible">
+        <div className="relative xl:w-1/2 w-[96%] h-96 md:h-112.5 flex items-center justify-center overflow-visible">
           {testimonials.map((item, i) => {
             const position =
               (i - index + testimonials.length) % testimonials.length;
@@ -177,7 +177,7 @@ export default function Testimonial() {
           })}
         </div>
       </div>{" "}
-      <div className="scroll-container bg-[#060606] lg:pt-5 pt-20 mt-58 md:mt-80 xl:mt-0">
+      <div className="scroll-container bg-[#060606] w-full lg:pt-5 pt-20 mt-58 md:mt-80 xl:mt-0">
         <div className="scroll-content">
           <p className="scroll-text font-bigshoulders">Have a In Mind?</p>
           <p className="scroll-text font-bigshoulders">Lets Work TOGETHER</p>

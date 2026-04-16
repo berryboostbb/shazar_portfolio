@@ -15,6 +15,7 @@ import Socket from "../../assets/socket.png";
 import Express from "../../assets/express.webp";
 import Stripe from "../../assets/Stripe.png";
 import Python from "../../assets/python.png";
+import Fullter from "../../assets/flutter.png";
 
 export default function Experience() {
   const experiences = [
@@ -42,7 +43,8 @@ export default function Experience() {
   const skills = [
     { name: "React js", percent: "98%", image: ReactLogo },
     { name: "React Native", percent: "94%", image: ReactLogo },
-    { name: "Next.js", percent: "90%", image: Next },
+    { name: "Next.js", percent: "95%", image: Next },
+    { name: "Flutter", percent: "90%", image: Fullter },
     { name: "Node.js", percent: "88%", image: Node },
     { name: "Express.js", percent: "91%", image: Express },
     { name: "Python", percent: "95%", image: Python },
