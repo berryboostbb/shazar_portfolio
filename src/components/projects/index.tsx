@@ -7,7 +7,7 @@ import Grazle from "../../assets/Project/gazal.png";
 import MediTour from "../../assets/Project/Meditour.png";
 import Pocho from "../../assets/Project/Property 1=Variant4.png";
 import Kabi from "../../assets/Project/kabi.png";
-import Alhai from "../../assets/Project/alhai.png";
+import Alhai from "../../assets/Project/Alhai.png";
 import PharamIntellgence from "../../assets/Project/pharam intellgence.png";
 import BBerp from "../../assets/Project/bbERp.png";
 import GCC from "../../assets/Project/GCC.png";
