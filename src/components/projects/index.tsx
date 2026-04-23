@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Icon } from "@iconify/react";
 
 // IMAGES
-import berryboost from "../../assets/Project/berryBoost.png";
+import berryboost from "../../assets/Project/berryboost.png";
 import Grazle from "../../assets/Project/gazal.png";
 import MediTour from "../../assets/Project/mediTour.png";
 import Pocho from "../../assets/Project/Property 1=Variant4.png";
