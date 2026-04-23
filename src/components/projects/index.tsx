@@ -5,12 +5,12 @@ import { Icon } from "@iconify/react";
 import berryboost from "../../assets/Project/berryBoost.png";
 import Grazle from "../../assets/Project/gazal.png";
 import MediTour from "../../assets/Project/mediTour.png";
-import Pocho from "../../assets/Project/pouchoo.png";
+import Pocho from "../../assets/Project/Property 1=Variant4.png";
 import Kabi from "../../assets/Project/kabi.png";
 import Alhai from "../../assets/Project/alhai.png";
 import PharamIntellgence from "../../assets/Project/pharam intellgence.png";
-import BBerp from "../../assets/Project/bb360.png";
-import GCC from "../../assets/Project/Property 1=Variant9.png";
+import BBerp from "../../assets/Project/bbERp.png";
+import GCC from "../../assets/Project/GCC.png";
 import Pocurmrnts from "../../assets/Project/pocurmrnts.png";
 import medicalTOur from "../../assets/Project/mediTour (2).png";
 import meditourAi from "../../assets/Project/Property 1=Variant12.png";
@@ -100,7 +100,7 @@ export default function Project() {
     {
       id: 9,
       type: "Other",
-      title: "GCC",
+      title: "Gulberg City Centre",
       category: "Web / Development",
       image: GCC,
       url: "https://www.gulbergcitycentre.com/",
