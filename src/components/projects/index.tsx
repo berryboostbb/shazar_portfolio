@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 // IMAGES
 import berryboost from "../../assets/Project/berryboost.png";
 import Grazle from "../../assets/Project/gazal.png";
-import MediTour from "../../assets/Project/mediTour.png";
+import MediTour from "../../assets/Project/Meditour.png";
 import Pocho from "../../assets/Project/Property 1=Variant4.png";
 import Kabi from "../../assets/Project/kabi.png";
 import Alhai from "../../assets/Project/alhai.png";
