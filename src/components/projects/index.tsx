@@ -9,7 +9,7 @@ import Pocho from "../../assets/Project/Property 1=Variant4.png";
 import Kabi from "../../assets/Project/kabi.png";
 import Alhai from "../../assets/Project/Alhai.png";
 import PharamIntellgence from "../../assets/Project/pharam intellgence.png";
-import BBerp from "../../assets/Project/bbERp.png";
+import BBerp from "../../assets/Project/bberp.png";
 import GCC from "../../assets/Project/GCC.png";
 import Pocurmrnts from "../../assets/Project/pocurmrnts.png";
 import medicalTOur from "../../assets/Project/mediTour (2).png";
