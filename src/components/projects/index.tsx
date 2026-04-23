@@ -127,7 +127,7 @@ export default function Project() {
       title: "MediRep AI Interleague System",
       category: "Web / Development",
       image: meditourAi,
-      url: "https://hr-management-dashboard-ten.vercel.app/",
+      url: "https://medi-rep-front-end.vercel.app/",
     },
     {
       id: 13,
@@ -140,10 +140,10 @@ export default function Project() {
     {
       id: 14,
       type: "SaaS",
-      title: "POR System",
+      title: "POS System",
       category: "Web / Development",
       image: posSysytem,
-      url: "https://medi-rep-front-end.vercel.app/",
+      url: "https://hr-management-dashboard-ten.vercel.app/",
     },
     {
       id: 15,
