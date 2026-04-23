@@ -20,25 +20,25 @@ import Fullter from "../../assets/flutter.png";
 export default function Experience() {
   const experiences = [
     {
-      year: "2024",
-      role: "Full Stack Developer",
-      company: "BerryBoost",
+      year: "April 2024 – Onward",
+      role: "AI Solutions Architect — Global AI Solutions",
+      company: "BerryBoost INC",
     },
     {
-      year: "2023",
-      role: "MERN Stack Developer",
-      company: "TechNova",
+      year: "July 2022 – March 2024",
+      role: "Senior Technology & Operations Leader",
+      company: "The MediTour Global INC.",
     },
-    {
-      year: "2022",
-      role: "Frontend Developer",
-      company: "WebCore",
-    },
-    {
-      year: "2021",
-      role: "Junior Developer",
-      company: "CodeLab",
-    },
+    // {
+    //   year: "2022",
+    //   role: "Frontend Developer",
+    //   company: "WebCore",
+    // },
+    // {
+    //   year: "2021",
+    //   role: "Junior Developer",
+    //   company: "CodeLab",
+    // },
   ];
   const skills = [
     { name: "React js", percent: "98%", image: ReactLogo },
