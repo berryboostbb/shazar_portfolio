@@ -83,7 +83,7 @@ export default function Project() {
     {
       id: 7,
       type: "AI Projects",
-      title: "Pharam Intelligence RAG",
+      title: "Pharma Intelligence RAG",
       category: "Web / Development",
       image: PharamIntellgence,
 
